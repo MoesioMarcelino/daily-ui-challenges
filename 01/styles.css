@@ -1,0 +1,111 @@
+*,
+html,
+body {
+  background            : rgb(248 248 248);
+  padding               : 0;
+  margin                : 0;
+  box-sizing            : border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family           : 'Roboto', sans-serif;
+}
+
+.container {
+  height         : 100vh;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.container .content {
+  display      : flex;
+  padding      : 70px;
+  border       : 1px solid rgb(238 238 238);
+  box-shadow   : 4px 4px 4px #c1c1c1;
+  border-radius: 50px;
+}
+
+.container .content .section {
+  display       : flex;
+  flex-direction: column;
+}
+
+.container .content .section:last-child {
+  margin-left: 100px;
+  align-items: center;
+}
+
+/* Estilizações da primeira seção */
+
+.container .content .section h1 {
+  margin-bottom: 50px;
+  font-size    : 36px;
+  font-weight  : 900;
+}
+
+
+.container .content .section .formulary div {
+  margin-bottom : 40px;
+  border-bottom : 1px solid #999;
+  padding-bottom: 15px;
+  display       : flex;
+  align-items   : center;
+}
+
+.container .content .section .formulary div i,
+.container .content .section .formulary div input {
+  margin-right: 20px;
+}
+
+.container .content .section .formulary div input {
+  flex   : 1;
+  border : 0;
+  outline: transparent;
+}
+
+.container .content .section .formulary div p {
+  color: rgb(58, 58, 58);
+}
+
+.container .content .section .formulary div p a {
+  color      : #000;
+  font-weight: 500;
+  transition : opacity 0.2s;
+}
+
+.container .content .section .formulary div p a:hover {
+  opacity: 0.7;
+}
+
+.container .content .section .formulary button {
+  border          : 0;
+  padding         : 20px 30px;
+  color           : #fff;
+  background-color: rgb(109 171 228);
+  border-radius   : 6px;
+  cursor          : pointer;
+  transition      : opacity 0.2s;
+  font-size       : 16px;
+}
+
+.container .content .section .formulary button:hover {
+  opacity: 0.8;
+}
+
+/* Estilizações da segunda seção */
+
+.container .content .section>img {
+  height    : 300px;
+  width     : 300px;
+  margin-top: 100px;
+}
+
+.container .content .section>a {
+  color      : #000;
+  font-weight: 500;
+  transition : opacity 0.2s;
+  margin-top : 80px;
+}
+
+.container .content .section>a:hover {
+  opacity: 0.7;
+}
