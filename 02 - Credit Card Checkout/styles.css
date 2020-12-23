@@ -1,0 +1,273 @@
+*,
+html,
+body {
+  background            : rgb(248 248 248);
+  padding               : 0;
+  margin                : 0;
+  box-sizing            : border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family           : 'Roboto', sans-serif;
+  background-color      : transparent;
+}
+
+.container {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  height          : 100vh;
+  background-color: rgb(197 180 127);
+  padding         : 0 100px;
+}
+
+.container>.content {
+  display      : flex;
+  border-radius: 20px;
+  width        : 100%;
+  background   : rgb(59, 59, 59);
+  background   : linear-gradient(231deg, rgba(59, 59, 59, 1) 18%, rgba(0, 0, 0, 1) 98%);
+  overflow     : auto;
+  box-shadow   : -5px 5px 8px #282727cc;
+  min-height   : 600px;
+  max-width    : 1100px;
+}
+
+/* Estilização da primeira seção */
+
+.container .content .bill {
+  width           : 40%;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-between;
+  min-height      : 400px;
+  align-items     : center;
+  padding         : 50px 40px 50px 50px;
+  background-color: #fff;
+
+  position: relative;
+}
+
+.container .content .bill img {
+  height: 150px;
+  width : 150px;
+}
+
+.container .content .bill .arrow {
+  position : absolute;
+  transform: rotate(45deg);
+  height   : 40px;
+  width    : 40px;
+  top      : 72px;
+  right    : -10px;
+}
+
+.container .content .bill .orders {
+  width: 100%;
+}
+
+.container .content .bill .orders .order {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.container .content .bill .orders .order:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.container .content .bill .orders .order .price {
+  display        : flex;
+  justify-content: space-between;
+  width          : 80px;
+}
+
+.container .content .bill .orders .order .price .type {
+  margin-right: 10px;
+}
+
+.container .content .bill .total {
+  display        : flex;
+  width          : 100%;
+  justify-content: space-between;
+
+  border-top : 1px dashed #000;
+  padding-top: 20px;
+}
+
+.container .content .bill .total label {
+  text-transform: uppercase;
+  font-size     : 10px;
+}
+
+.container .content .bill .total .price {
+  font-size  : 20px;
+  font-weight: 700;
+}
+
+/* Estilização da segunda seção */
+.container .content .payment-details {
+  width          : 60%;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-around;
+  padding        : 50px 50px 50px 40px;
+}
+
+.container .content .payment-details .header {
+  background-color: transparent;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  margin-bottom   : 40px;
+}
+
+.container .content .payment-details .header p {
+  text-transform: uppercase;
+  color         : #fff;
+  font-size     : 25px;
+  font-weight   : 900;
+}
+
+.container .content .payment-details .header i {
+  color    : #fff;
+  font-size: 60px;
+}
+
+.container .content .payment-details .content {
+  display       : flex;
+  flex-direction: column;
+  margin-bottom : 40px;
+}
+
+.container .content .payment-details .content .card-number,
+.container .content .payment-details .content .owner {
+  display       : flex;
+  flex-direction: column;
+  margin-bottom : 30px;
+}
+
+.container .content .payment-details .content .card-number label,
+.container .content .payment-details .content .owner label {
+  color         : #fff;
+  text-transform: capitalize;
+  margin-bottom : 10px;
+}
+
+.container .content .payment-details .content .card-number input,
+.container .content .payment-details .content .owner input {
+  border   : 0;
+  height   : 20px;
+  outline  : 0;
+  color    : #eee;
+  font-size: 20px;
+}
+
+.container .content .payment-details .content .card-number input::placeholder,
+.container .content .payment-details .content .owner input::placeholder {
+  margin-top    : 20px;
+  font-size     : 20px;
+  color         : #eee;
+  text-transform: uppercase;
+}
+
+.container .content .payment-details .content .footer-informations {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.container .content .payment-details .content .footer-informations div {
+  display       : flex;
+  flex-direction: column;
+}
+
+.container .content .payment-details .content .footer-informations .expiry-date {
+  display: flex;
+}
+
+.container .content .payment-details .content .footer-informations .expiry-date>label {
+  text-transform: capitalize;
+  color         : #fff;
+  margin-bottom : 10px;
+}
+
+.container .content .payment-details .content .footer-informations .expiry-date .date {
+  display       : flex;
+  flex-direction: row;
+}
+
+.container .content .payment-details .content .footer-informations .expiry-date .date input {
+  border   : 0;
+  height   : 20px;
+  outline  : 0;
+  color    : #eee;
+  font-size: 20px;
+  width    : 70px;
+}
+
+.container .content .payment-details .content .footer-informations .expiry-date .date span {
+  color       : #eee;
+  font-size   : 20px;
+  margin-right: 40px;
+}
+
+.container .content .payment-details .content .footer-informations .expiry-date .date input::placeholder {
+  margin-top    : 20px;
+  font-size     : 20px;
+  color         : #eee;
+  text-transform: uppercase;
+}
+
+.container .content .payment-details .content .footer-informations .cvv label {
+  text-transform: capitalize;
+  color         : #fff;
+  margin-bottom : 10px;
+}
+
+.container .content .payment-details .content .footer-informations .cvv input {
+  border   : 0;
+  height   : 20px;
+  outline  : 0;
+  color    : #eee;
+  font-size: 20px;
+}
+
+.container .content .payment-details .content .footer-informations .cvv input::placeholder {
+  margin-top    : 20px;
+  font-size     : 20px;
+  color         : #eee;
+  text-transform: uppercase;
+}
+
+.container .content .payment-details .footer {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.container .content .payment-details .footer p {
+  color: rgba(238, 238, 238, 0.164);
+}
+
+.container .content .payment-details .footer p a {
+  text-decoration   : underline;
+  /* color          : rgba(238, 238, 238, 0.322); */
+  color             : rgba(204, 220, 57, 0.452);
+  transition        : opacity 0.4s;
+}
+
+.container .content .payment-details .footer p a:hover {
+  opacity: 0.7;
+}
+
+.container .content .payment-details .footer button {
+  /* background-color: rgb(76 175 80); */
+  background   : rgb(205, 220, 57);
+  padding      : 20px 30px;
+  border       : 0;
+  border-radius: 10px;
+  cursor       : pointer;
+  transition   : opacity 0.4s;
+  outline      : 0;
+}
+
+.container .content .payment-details .footer button:hover {
+  opacity: 0.5;
+}
