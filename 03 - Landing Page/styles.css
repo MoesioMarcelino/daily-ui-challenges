@@ -1,0 +1,179 @@
+*,
+html,
+body {
+  background            : rgb(248 248 248);
+  padding               : 0;
+  margin                : 0;
+  box-sizing            : border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family           : 'Roboto', sans-serif;
+  background-color      : transparent;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container .background {
+  background-image: url('./assets/background.png');
+  height          : 70%;
+  background-size : cover;
+}
+
+.container .background .header {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.container .background .header a {
+  text-transform: uppercase;
+  margin-right  : 40px;
+  cursor        : pointer;
+  font-weight   : 500;
+  transition    : color 0.3s;
+
+  text-decoration: none;
+  color          : #000;
+}
+
+.container .background .header a:hover {
+  color: rgb(41, 150, 204);
+}
+
+.container .background .header a:last-child {
+  margin-right: 0;
+}
+
+.container .background .header img {
+  width : 80px;
+  margin: 0 100px 0 60px;
+  cursor: pointer;
+}
+
+.container .background .content {
+  margin-left    : 120px;
+  height         : 75%;
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : flex-start;
+  max-width      : 50%;
+}
+
+.container .background .content label {
+  text-transform: uppercase;
+  font-size     : 20px;
+  color         : rgb(167, 167, 167);
+  font-weight   : 700;
+  margin-top    : 20px;
+}
+
+.container .background .content .description {
+  text-transform: uppercase;
+  font-size     : 35px;
+  margin        : 5px 0;
+}
+
+.container .background .content button {
+  margin        : 10px 0;
+  border        : 0;
+  padding       : 15px;
+  background    : rgb(41 150 204);
+  border-radius : 8px;
+  text-transform: uppercase;
+  color         : rgb(255 255 255);
+  font-weight   : 500;
+  transition    : opacity 0.4s;
+  cursor        : pointer;
+}
+
+.container .background .content button:hover {
+  opacity: 0.7;
+}
+
+.container .background .content a {
+  text-decoration: none;
+  color          : rgb(83, 83, 83);
+  transition     : color 0.4s;
+  cursor         : pointer;
+}
+
+.container .background .content a:hover {
+  color: rgb(41, 150, 204);
+}
+
+.container .footer {
+  display       : flex;
+  flex-direction: column;
+  align-items   : flex-start;
+  border-top    : 1px solid rgb(235, 234, 234);
+}
+
+.container .footer .titles {
+  text-transform: uppercase;
+  padding       : 20px 0 20px 30px;
+}
+
+.container .footer .titles a {
+  margin-right: 20px;
+  cursor      : pointer;
+  font-weight : 500;
+  transition  : color 0.3s;
+
+  text-decoration: none;
+  color          : #000;
+}
+
+.container .footer .titles a:hover {
+  color: rgb(41, 150, 204);
+}
+
+.container .footer .titles label {
+  margin-right: 20px;
+}
+
+.container .footer .about {
+  display        : flex;
+  justify-content: space-around;
+  align-items    : center;
+  width          : 100%;
+  padding        : 0 70px;
+}
+
+.container .footer .about>div {
+  border       : 1px solid rgb(190 190 190);
+  padding      : 15px;
+  border-radius: 10px;
+  box-shadow   : 3px 3px 4px rgb(167, 167, 167);
+}
+
+.container .footer .about div {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: space-between;
+
+}
+
+.container .footer .about .security {
+  margin: 0 50px;
+}
+
+.container .footer .about div img {
+  margin-bottom: 15px;
+  color        : rgb(41, 150, 204);
+}
+
+.container .footer .about div .title {
+  text-transform: uppercase;
+  font-weight   : 500;
+  margin-bottom : 15px;
+  text-align    : center;
+}
+
+.container .footer .about div .description {
+  font-size : 14px;
+  text-align: justify;
+  padding   : 0 15px;
+}

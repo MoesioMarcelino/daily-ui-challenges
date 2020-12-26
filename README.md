@@ -7,7 +7,8 @@
 ## Catalog (Click to see)
 
 - [Daily UI 01 - Sign Up](https://user-images.githubusercontent.com/37598129/103146058-90e02180-4722-11eb-9892-98d21f87735a.png)
-- [Daily UI 01 - Credit Card Checkout](https://user-images.githubusercontent.com/37598129/103027141-12be2800-4534-11eb-861f-21062b27ef60.png)
+- [Daily UI 02 - Credit Card Checkout](https://user-images.githubusercontent.com/37598129/103027141-12be2800-4534-11eb-861f-21062b27ef60.png)
+- [Daily UI 03 - Landing Page](https://user-images.githubusercontent.com/37598129/103160598-0ea13d00-47b6-11eb-89a9-4b72aaf22e5a.png)
 
 
 <br>
