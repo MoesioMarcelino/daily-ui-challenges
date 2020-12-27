@@ -1,0 +1,317 @@
+*,
+html,
+body {
+  background            : rgb(248 248 248);
+  padding               : 0;
+  margin                : 0;
+  box-sizing            : border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family           : 'Roboto', sans-serif;
+  background-color      : transparent;
+}
+
+.container {
+  height          : 100vh;
+  width           : 100%;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  background-color: rgba(224, 224, 224, 0.14);
+}
+
+.container .light-mode,
+.container .dark-mode {
+  min-height: 800px;
+  max-width : 400px;
+  min-width : 400px;
+
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+  flex           : 1;
+
+  border          : 1px solid rgb(206, 206, 206);
+  border-radius   : 20px;
+  overflow        : hidden;
+  background-color: #fff;
+
+  box-shadow: 2px 4px 5px #a9a9a9;
+}
+
+.container .dark-mode {
+  background-color: rgb(56, 56, 56);
+}
+
+.container .light-mode {
+  margin-right: 50px;
+}
+
+.container .light-mode .display,
+.container .dark-mode .display {
+  display       : flex;
+  flex-direction: column;
+  width         : 100%;
+  padding       : 30px 30px 0;
+  flex          : 1;
+}
+
+.container .dark-mode .display {
+  background-color: rgb(83, 83, 83);
+}
+
+.container .light-mode .display .actions,
+.container .dark-mode .display .actions {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+  flex           : 1;
+}
+
+.container .light-mode .display .actions img,
+.container .dark-mode .display .actions img {
+  padding      : 10px;
+  background   : rgb(255, 255, 255);
+  border       : 1px solid rgb(148, 147, 147);
+  border-radius: 50%;
+  box-shadow   : 1px 1px 4px #636363;
+
+  cursor: pointer;
+
+  transition: box-shadow 0.4s;
+}
+
+.container .dark-mode .display .actions img {
+  background-color: rgb(178, 178, 178);
+}
+
+.container .light-mode .display .actions img:hover {
+  box-shadow: 1px 1px 12px #636363;
+}
+
+.container .dark-mode .display .actions img:hover {
+  box-shadow: 1px 1px 12px #838282;
+}
+
+.container .light-mode .display .values,
+.container .dark-mode .display .values {
+  display        : flex;
+  align-items    : center;
+  justify-content: flex-end;
+  flex           : 1;
+
+  font-size : 60px;
+  color     : rgb(76, 76, 76);
+  margin-top: 30px;
+}
+
+.container .dark-mode .display .values {
+  color: rgb(211, 209, 209);
+}
+
+.container .light-mode .display .values .operator,
+.container .dark-mode .display .values .operator {
+  color    : rgb(86, 117, 241);
+  font-size: 45px;
+}
+
+.container .light-mode .display .result,
+.container .dark-mode .display .result {
+  font-size: 40px;
+  color    : rgb(116, 116, 116);
+  margin   : 10px 0;
+
+  display        : flex;
+  justify-content: flex-end;
+  flex           : 1;
+}
+
+.container .dark-mode .display .result {
+  color: rgb(185, 184, 184);
+}
+
+.container .light-mode .keyboard,
+.container .dark-mode .keyboard {
+  display       : flex;
+  flex-direction: column;
+  flex          : 1;
+
+  border-top: 1px solid rgb(206, 206, 206);
+  width     : 100%;
+  padding   : 30px 30px 0;
+  box-shadow: 0px -15px 47px -14px rgb(218, 233, 249);
+
+}
+
+.container .dark-mode .keyboard {
+  border-top      : 1px solid rgb(56, 56, 56);
+  box-shadow      : 0px -15px 30px -9px rgba(41, 41, 41, 0.69);
+  background-color: rgb(56, 56, 56);
+}
+
+.container .light-mode .keyboard .first-line,
+.container .dark-mode .keyboard .first-line {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+  flex           : 1;
+
+  cursor: pointer;
+}
+
+.container .light-mode .keyboard .first-line span,
+.container .dark-mode .keyboard .first-line span {
+  font-size: 25px;
+  color    : rgb(80 80 80);
+
+  transition: color 0.4s;
+}
+
+.container .dark-mode .keyboard .first-line span {
+  color: #fff;
+}
+
+.container .light-mode .keyboard .first-line span:hover,
+.container .dark-mode .keyboard .first-line span:hover {
+  color: rgb(86, 117, 241);
+}
+
+.container .light-mode .keyboard .keys,
+.container .dark-mode .keyboard .keys {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+  align-items    : center;
+  flex           : 1;
+
+  padding: 30px 20px 0;
+
+  position: relative;
+}
+
+.container .light-mode .keyboard .keys span,
+.container .dark-mode .keyboard .keys span {
+  width        : 33%;
+  text-align   : center;
+  font-size    : 35px;
+  color        : rgb(80 80 80);
+  margin-bottom: 30px;
+  cursor       : pointer;
+
+  transition: color 0.4s;
+}
+
+.container .dark-mode .keyboard .keys span {
+  color: #fff;
+}
+
+.container .light-mode .keyboard .keys span:hover,
+.container .dark-mode .keyboard .keys span:hover {
+  color: rgb(86, 117, 241);
+}
+
+.container .light-mode .keyboard .keys .operators,
+.container .dark-mode .keyboard .keys .operators {
+  position: absolute;
+  right   : -30px;
+  top     : 10%;
+
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: space-between;
+
+  padding                  : 20px;
+  font-size                : 30px;
+  background               : linear-gradient(356deg, rgba(57, 81, 249, 1) 17%, rgba(50, 153, 250, 1) 77%);
+  border-top-left-radius   : 20px;
+  border-bottom-left-radius: 20px;
+  height                   : 80%;
+
+  cursor: pointer;
+}
+
+
+.container .light-mode .keyboard .keys .operators span,
+.container .dark-mode .keyboard .keys .operators span {
+  margin-bottom: 10px;
+  color        : #fff;
+  font-weight  : 500;
+
+  transition: color 0.4s;
+}
+
+.container .light-mode .keyboard .keys .operators span:hover,
+.container .dark-mode .keyboard .keys .operators span:hover {
+  color: rgb(255, 230, 0);
+}
+
+.container .light-mode .keyboard .keys .more-options,
+.container .dark-mode .keyboard .keys .more-options {
+  position: absolute;
+  left    : -30px;
+  top     : 10%;
+
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+
+  padding                   : 2px;
+  font-size                 : 30px;
+  background                : linear-gradient(356deg, rgb(57 81 249) 17%, rgb(50 153 250) 77%);
+  border-top-right-radius   : 20px;
+  border-bottom-right-radius: 20px;
+  height                    : 80%;
+
+  cursor: pointer;
+}
+
+.container .light-mode .keyboard .keys .more-options img,
+.container .dark-mode .keyboard .keys .more-options img {
+  margin-bottom: 10px;
+  color        : #fff;
+  font-weight  : 500;
+}
+
+.container .light-mode .types,
+.container .dark-mode .types {
+  width          : 100%;
+  display        : flex;
+  align-items    : center;
+  justify-content: space-around;
+  flex           : 1;
+
+  padding: 0 0 30px;
+}
+
+.container .dark-mode .types {
+  background-color: rgb(56, 56, 56);
+}
+
+.container .light-mode .types div,
+.container .dark-mode .types div {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+  text-transform : uppercase;
+  font-weight    : 500;
+  cursor         : pointer;
+  transition     : color 0.3s;
+  font-size      : 14px;
+}
+
+.container .dark-mode .types div {
+  color: #fff;
+}
+
+.container .light-mode .types div:hover,
+.container .dark-mode .types div:hover {
+  color: rgb(86, 117, 241);
+}
+
+.container .light-mode .types div img,
+.container .dark-mode .types div img {
+  margin-top: 10px;
+}
