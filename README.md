@@ -10,6 +10,7 @@
 - [Daily UI 02 - Credit Card Checkout](https://user-images.githubusercontent.com/37598129/103027141-12be2800-4534-11eb-861f-21062b27ef60.png)
 - [Daily UI 03 - Landing Page](https://user-images.githubusercontent.com/37598129/103160598-0ea13d00-47b6-11eb-89a9-4b72aaf22e5a.png)
 - [Daily UI 04 - Calculator](https://user-images.githubusercontent.com/37598129/103177313-04d01600-4858-11eb-9ae0-88fb5851f1c8.png)
+- [Daily UI 05 - App Icon](https://user-images.githubusercontent.com/37598129/103370775-6b4d7200-4aac-11eb-9c53-bd916243b4dc.png)
 
 
 <br>
